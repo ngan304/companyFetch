@@ -18,16 +18,19 @@ public class Topic_01_Check_Environment {
 	@BeforeClass 
 	public void beforeClass() {
 		//fire fox
-		//System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe"); 
-		//driver = new FirefoxDriver();
-		
-		// Chrome
-		System.setProperty("webdriver.chrome.driver", projectPath+"\\browserDrivers\\chromedriver.exe"); 
-		driver = new ChromeDriver();
-		
+		System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe"); 
+		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/v4/");
+		
+		// Chrome
+		//System.setProperty("webdriver.chrome.driver", projectPath+"\\browserDrivers\\chromedriver.exe"); 
+		//driver = new ChromeDriver();
+		
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();
+		//driver.get("http://demo.guru99.com/v4/");
 	}
 
 	@Test
