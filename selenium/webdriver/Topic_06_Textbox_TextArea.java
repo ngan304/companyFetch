@@ -43,7 +43,7 @@ public class Topic_06_Textbox_TextArea {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://demo.guru99.com/v4");
 		
-		// Init (gán giá trị) data (new customer)
+		/// Init (gán giá trị) data (new customer)
 		emailAddress= "jonlips" + generateEmail();
 		name = "Jonh";
 		dob = "1970-01-01";
