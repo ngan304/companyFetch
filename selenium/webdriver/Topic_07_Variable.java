@@ -1,7 +1,7 @@
 package webdriver;
 
 public class Topic_07_Variable {
-	////a
+	///
 	String address;
 	static String cityName="Nguyen Kim Ngan";
 	
