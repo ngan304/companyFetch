@@ -30,5 +30,8 @@ public class Topic_04_Normal_Class {
 		
 		//Instance (là biến)= đại diện cho kiểu dữ liệu (class, interface/....)
 		
+			
+		
+		
 	}
 }
