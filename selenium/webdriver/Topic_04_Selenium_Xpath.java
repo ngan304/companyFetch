@@ -3,14 +3,15 @@ package webdriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 
-import java.util.List;
+
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class Topic_04_Selenium_Xpath {

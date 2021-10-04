@@ -6,11 +6,11 @@ import org.testng.annotations.BeforeClass;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class Topic_03_Selenium_Locator {
@@ -29,7 +29,7 @@ public class Topic_03_Selenium_Locator {
 		driver.get("http://live.demoguru99.com/index.php/customer/account/login/");
 	}
 
-	//@Test
+	@Test
 	public void TC_01_FindElement() {
 	
 		//Single element: weblement
@@ -48,7 +48,7 @@ public class Topic_03_Selenium_Locator {
 		buttons.get(0).click();
 	}
 	
-	//@Test
+	@Test
 		public void TC_02_ID() {
 			// Selenium locator
 		driver.findElement(By.id("send2")).click();
@@ -58,7 +58,7 @@ public class Topic_03_Selenium_Locator {
 			
 	}
 	
-	///@Test
+	@Test
 	//Class dùng 1 phần class hoyyy
 	public void TC_03_Class() {
 		driver.navigate().refresh();
@@ -67,7 +67,7 @@ public class Topic_03_Selenium_Locator {
 		
 	}
 	
-	//@Test
+	@Test
 	public void TC_04_Name() {
 		
 		driver.navigate().refresh();
@@ -77,7 +77,7 @@ public class Topic_03_Selenium_Locator {
 	}
 	
 	
-	//@Test
+	@Test
 	//tìm có bao nhiêu element giống nhau thì hay dùng tag name
 	public void TC_05_Tagname() {
 		driver.navigate().refresh();
@@ -101,7 +101,7 @@ public class Topic_03_Selenium_Locator {
 		
 	}
 	
-	//@Test
+	@Test
 	//PartialLinkText lấy 1 phần text là có thể chạy được rồi
 	public void TC_07_PartialLinkText() {
 		driver.findElement(By.partialLinkText("Back to")).click();
