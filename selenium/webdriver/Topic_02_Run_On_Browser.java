@@ -1,6 +1,7 @@
 package webdriver;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -29,5 +30,11 @@ public class Topic_02_Run_On_Browser {
 		driver.get("https://m.facebook.com/");
 		driver.quit();
 	}
+	@Test
+	public void TC_03_Run_On_Edge_Chromium() {
+		System.setProperty("webdriver.edge.driver",projectPath +"\\browserDrivers\\msedgedriver.exe");
+		driver=new EdgeDriver();
+	}
+	
 
 }
