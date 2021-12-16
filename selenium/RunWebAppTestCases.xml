@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="Tiki Web" parallel="tests" thread-count="2">
+
+ <listeners>
+ <listener class-name="listenerConfig.TestListener"/>
+ </listeners>
+
+	<test name="Run on FIREFOX">
+		<classes>
+			<class name="testng.Topic_06_Loop" />
+			<class name="testng.Topic_03_Priority_Enabled" />
+		</classes>
+	</test>
+	
+</suite> 
