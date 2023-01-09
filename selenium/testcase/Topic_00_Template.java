@@ -1,4 +1,4 @@
-package webdriver;
+package testcase;
 
 import java.util.concurrent.TimeUnit;
 
